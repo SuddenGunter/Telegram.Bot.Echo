@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types.Enums;
@@ -27,7 +28,7 @@ namespace Telegram.Bot.Examples.Echo
 
             Bot.StartReceiving(Array.Empty<UpdateType>());
             Console.WriteLine($"Start listening for @{me.Username}");
-            Console.ReadLine();
+            Thread.Sleep(TimeSpan.FromHours(1));
             Bot.StopReceiving();
         }
 
