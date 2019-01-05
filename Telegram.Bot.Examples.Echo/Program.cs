@@ -84,7 +84,7 @@ namespace Telegram.Bot.Examples.Echo
                 case "/photo":
                     await Bot.SendChatActionAsync(message.Chat.Id, ChatAction.UploadPhoto);
 
-                    const string file = @"Files/1.jpg";
+                    const string file = @"Files/photo5296722324659218963.jpg";
 
                     var fileName = file.Split(Path.DirectorySeparatorChar).Last();
 
